@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.frames.Start">
+   <children>
+      <Text layoutX="137.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-fill: white;" text="Number Guessing Game" />
+      <Text fill="WHITE" layoutX="249.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 8;" text="developed by Mihály Csontos" />
+      <Button layoutX="278.0" layoutY="248.0" mnemonicParsing="false" onAction="#start" text="Start" />
+      <Button layoutX="276.0" layoutY="287.0" mnemonicParsing="false" onAction="#rules" text="Rules" />
+      <Button layoutX="256.0" layoutY="323.0" mnemonicParsing="false" onAction="#leaderboard" text="Leaderboard" />
+      <RadioButton fx:id="easy" layoutX="268.0" layoutY="129.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="66.0" style="-fx-text-fill: white;" text="Easy" textAlignment="CENTER">
+         <toggleGroup>
+            <ToggleGroup fx:id="mode" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="medium" layoutX="268.0" layoutY="148.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" selected="true" style="-fx-text-fill: white;" text="Medium" textAlignment="CENTER" toggleGroup="$mode" />
+      <RadioButton fx:id="hard" layoutX="268.0" layoutY="166.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="66.0" style="-fx-text-fill: white;" text="Hard" textAlignment="CENTER" toggleGroup="$mode" />
+      <RadioButton fx:id="extreme" layoutX="268.0" layoutY="184.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="66.0" style="-fx-text-fill: white;" text="Extreme" textAlignment="CENTER" toggleGroup="$mode" />
+   </children>
+</AnchorPane>
